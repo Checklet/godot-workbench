@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=4 uid="uid://cbbdydapl17hs"]
+[gd_scene load_steps=20 format=4 uid="uid://cbbdydapl17hs"]
 
+[ext_resource type="Texture2D" uid="uid://chrab6vl61drr" path="res://city-builder/res/tiles/fir.terrain-decor.png" id="1_fcdrj"]
 [ext_resource type="Texture2D" uid="uid://dhsupxioqbxvx" path="res://city-builder/res/tiles/beech.terrain-decor.png" id="1_lyuai"]
 [ext_resource type="Texture2D" uid="uid://csp4a5pbpeipi" path="res://city-builder/res/tiles/grass.terrain.png" id="1_oumee"]
 [ext_resource type="Texture2D" uid="uid://svw7wj56gf5t" path="res://city-builder/res/tiles/birch.terrain-decor.png" id="2_pmk6a"]
@@ -8,6 +9,23 @@
 [ext_resource type="Texture2D" uid="uid://bc2jyvxcge6bu" path="res://city-builder/res/tiles/farmland.terrain.png" id="4_8nhho"]
 [ext_resource type="Texture2D" uid="uid://dp83mt2n61kto" path="res://city-builder/res/tiles/house.building.png" id="4_400s6"]
 [ext_resource type="Texture2D" uid="uid://bbn2wuo8urlx2" path="res://city-builder/res/tiles/wheat.terrain-decor.png" id="5_or0ea"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8nhho"]
+texture = ExtResource("1_fcdrj")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 40)
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d3xwm"]
 texture = ExtResource("1_lyuai")
@@ -87,6 +105,7 @@ sources/11 = SubResource("TileSetAtlasSource_60mge")
 sources/12 = SubResource("TileSetAtlasSource_a7828")
 sources/13 = SubResource("TileSetAtlasSource_uf3ue")
 sources/14 = SubResource("TileSetAtlasSource_x6q1d")
+sources/0 = SubResource("TileSetAtlasSource_8nhho")
 
 [node name="cheatsheet level" type="Node2D"]
 texture_filter = 1
@@ -98,5 +117,5 @@ tile_set = SubResource("TileSet_pmk6a")
 
 [node name="building" type="TileMapLayer" parent="."]
 texture_filter = 1
-tile_map_data = PackedByteArray("AAAGAAMACgAAAAAAAAAHAAIACgAAAAAAAAAHAP7/CgAAAAAAAAAFAAIACgAAAAAAAAAGAAIACgAAAAAAAAAHAAQACgAAAAAAAAALAP//CgAAAAAAAAAJAP3/CgAAAAAAAAAKAP3/CgAAAAAAAAAJAP7/CgAAAAAAAAALAAMACwAAAAAAAAAKAP7/CwAAAAAAAAAFAAMACwAAAAAAAAAFAAEACwAAAAAAAAAHAP3/DAAAAAAAAAAHAPz/DAAAAAAAAAAFAPz/DAAAAAAAAAAGAP3/DAAAAAAAAAAMAP7/DgAAAAAAAAAMAP3/DgAAAAAAAAAMAPz/DgAAAAAAAAANAPz/DgAAAAAAAAAOAPz/DgAAAAAAAAAOAP3/DgAAAAAAAAANAP3/DgAAAAAAAAANAP7/DgAAAAAAAAAOAP7/DgAAAAAAAAAMAPr/DgAAAAAAAAAMAPn/DgAAAAAAAAAMAPj/DgAAAAAAAAAMAPf/DgAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAGAAMACgAAAAAAAAAHAAIACgAAAAAAAAAHAP7/CgAAAAAAAAAFAAIACgAAAAAAAAAGAAIACgAAAAAAAAAHAAQACgAAAAAAAAALAP//CgAAAAAAAAAJAP3/CgAAAAAAAAAKAP3/CgAAAAAAAAAJAP7/CgAAAAAAAAALAAMACwAAAAAAAAAKAP7/CwAAAAAAAAAFAAMACwAAAAAAAAAFAAEACwAAAAAAAAAHAP3/DAAAAAAAAAAHAPz/DAAAAAAAAAAFAPz/DAAAAAAAAAAGAP3/DAAAAAAAAAAMAP7/DgAAAAAAAAAMAP3/DgAAAAAAAAAMAPz/DgAAAAAAAAANAPz/DgAAAAAAAAAOAPz/DgAAAAAAAAAOAP3/DgAAAAAAAAANAP3/DgAAAAAAAAANAP7/DgAAAAAAAAAOAP7/DgAAAAAAAAAMAPr/DgAAAAAAAAAMAPn/DgAAAAAAAAAMAPj/DgAAAAAAAAAMAPf/DgAAAAAAAAAFAP7/AAAAAAAAAAAMAPX/AAAAAAAAAAAOAPb/AAAAAAAAAAAEAAMAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_pmk6a")
